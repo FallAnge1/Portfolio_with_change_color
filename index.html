@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+	<link rel="icon" href="./img/logo.png" type="image/png">
+	<title>SAKO - portfolio</title>
+	<link rel="stylesheet" href="./css/main.css">
+	<link rel="stylesheet" href="./css/media.css">
+	<link rel="stylesheet" href="./css/footer.css">
+	<script src="./js/app.js" defer></script>
+	<script src="./js/names.js" defer></script>
+	<script src="./js/themes.js" defer></script>
+</head>
+<body>
+	<header>
+		<div class="header">
+			<a href="#" class="logo"><img src="./img/logo.png" alt="SAKO" class="logo-img"></a>
+			<ul class="links">
+				<li class="hideinmenu"><a href="#" class="link">Home</a></li>
+				<li class="hideinmenu"><a href="#info" class="link">About</a></li>
+				<li class="hideinmenu"><a href="#info" class="link">Works</a></li>
+				<li class="menuBtn" onclick="showSideBar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="35px" viewBox="0 -960 960 960" width="35px" class="menu"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+			</ul>
+			
+			<div class="themes hideinmenu">
+				<div class="theme barbie" id="barbie-theme"></div>
+				<div class="theme green" id="green-theme"></div>
+				<div class="theme red" id="red-theme"></div>
+				<div class="theme blue" id="blue-theme"></div>
+				<a href="#info"><button class="contact">Let`s Talk!</button></a>
+			</div>
+		</div>
+
+                                      <!-- SIDEBAR -->
+
+		<ul class="sidebar">
+			<li onclick="hideSideBar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="50px" viewBox="0 -960 960 960" class="menu" width="50px"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+			<a href="#" class="logo"><img src="./img/logo.png" alt="SAKO" class="logo-img"></a>
+			<li><a href="#" class="link">Home</a></li>
+			<li><a href="#info" class="link">About</a></li>
+			<li><a href="#info" class="link">Works</a></li>
+			<div class="themesSidebar">
+				<div class="themes">
+					<div class="theme barbie" id="barbie-theme"></div>
+					<div class="theme green" id="green-theme"></div>
+					<div class="theme red" id="red-theme"></div>
+					<div class="theme blue" id="blue-theme"></div>
+				</div>
+				<button class="contact">Let`s Talk!</button>
+			</div>
+		</ul>
+	</header>
+
+	<main>
+		<section class="hero-section">
+			<div class="welcome">
+				<div class="welcome-text">
+					<h1 class="privet">Привет!</h1>
+					<div class="welcome-text2">
+						<h1 class="hero-text">Меня зовут</h1>
+						<div class="names-div">
+							<span class="names"></span>
+							<div class="text-line"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		</section>
+		
+		<section class="info">
+			<div class="leftsideMenu-section hidden" id="info">
+				<div class="leftsideMenu">
+					<img src="./img/logo.png" alt="Logo Img">
+					<p>Kassym Sagyngali</p>
+					<ul>
+						<li><a href="#">Home</a></li>
+						<li><a id="projects" href="">Projects</a></li>
+						<li><a id="about" href="">About</a></li>
+						<li><a id="contact" href="">Contact</a></li>
+					</ul>
+					<div class="themes">
+						<div class="theme barbie" id="barbie-theme"></div>
+						<div class="theme green" id="green-theme"></div>
+						<div class="theme red" id="red-theme"></div>
+						<div class="theme blue" id="blue-theme"></div>
+					</div>
+				</div>
+			</div>
+			<div class="hidden">
+				<div class="rightside-info hide" id="rightside-info"></div>
+			</div>
+			
+		</section>
+
+	</main>
+
+	<footer>
+		<div class="wrapper" style="--quantity: 10">
+			<div class="item" style="--position: 1"><p>HTML</p></div>
+			<div class="item" style="--position: 2"><p>CSS</p></div>
+			<div class="item" style="--position: 3"><p>JavaScript</p></div>
+			<div class="item" style="--position: 4"><p>React</p></div>
+			<div class="item" style="--position: 5"><p>TypeScript</p></div>
+			<div class="item" style="--position: 6"><p>Edits</p></div>
+			<div class="item" style="--position: 7"><p>Content</p></div>
+			<div class="item" style="--position: 8"><p>Photograph</p></div>
+			<div class="item" style="--position: 9"><p>Figma</p></div>
+			<div class="item" style="--position: 10"><p>Photoshop</p></div>
+		</div>
+	</footer>
+</body>
+</html>
